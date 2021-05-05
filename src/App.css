@@ -1,0 +1,339 @@
+/* ! 작업 중 =================================== */
+#react-naver-map {
+  outline: none;
+}
+/* ! ========================================= */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: -apple-system;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+/* #root {
+} */
+
+.center_div_res {
+  padding: 3.5rem 0 1.5rem 0;
+  height: 75%;
+  width: 25%;
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.center_div_res_container {
+  height: 75%;
+  width: 25%;
+}
+
+.bg_eee {
+  background-color: #eee;
+}
+
+.bg_contrast {
+  background-color: rgb(212, 212, 212);
+}
+
+.signin_up {
+  border-radius: 3rem 3rem 0 0;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.signin_down {
+  border-radius: 0 0 3rem 3rem;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.signup_password {
+  display: block;
+  position: absolute;
+  top: 0.2rem;
+  right: 2.2rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  margin: 0.7rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+input {
+  border-color: #eee;
+  border-style: solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* ! % =================================== */
+.hw100 {
+  height: 100%;
+  width: 100%;
+}
+/* ! ===================================== */
+
+/* ! rem ================================= */
+.rem5 {
+  height: 5rem;
+}
+
+.rem7 {
+  height: 7rem;
+}
+
+.rem35 {
+  height: 35rem;
+}
+/* ! ===================================== */
+
+/* ! display: flex ======================= */
+.container_flex_row {
+  display: flex;
+}
+
+.container_flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.responsive_flex_r2c {
+  display: flex;
+}
+
+.responsive_flex_c2r {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex5 {
+  flex: 5 1 0;
+}
+
+.flex10 {
+  flex: 10 1 0;
+}
+
+.flex20 {
+  flex: 20 1 0;
+}
+
+.flex30 {
+  flex: 30 1 0;
+}
+
+.flex70 {
+  flex: 70 1 0;
+}
+
+.flex80 {
+  flex: 80 1 0;
+}
+/* ! ===================================== */
+
+/* ! display: grid ======================= */
+.container_grid {
+  display: grid;
+}
+
+.center_grid {
+  place-items: center;
+  /* https://css-tricks.com/almanac/properties/p/place-items/ */
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+/* ! ===================================== */
+
+/* .text_center {
+  text-align: center;
+} */
+
+.relative {
+  position: relative;
+}
+
+.display_none {
+  display: none;
+}
+
+.container_padding {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.menu_closed {
+  display: none;
+}
+
+.menu_open {
+  position: absolute;
+  z-index: 101;
+  height: 40rem;
+  width: 100%;
+  background-color: white;
+}
+
+#logo_res {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.sticky_nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: solid 1px rgb(212, 212, 212);
+  z-index: 1;
+}
+
+.absolute_nav_r {
+  padding: 1.5rem;
+  right: 0;
+  position: absolute;
+}
+
+.absolute_nav_r1_res {
+  margin: 1.5rem;
+  right: 0;
+  position: absolute;
+}
+
+.absolute_nav_r2_res {
+  display: none;
+}
+
+.absolute_nav_l {
+  padding: 1.5rem;
+  left: 0;
+  position: absolute;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.absolute_nav_l_res {
+  display: none;
+}
+
+.inline_block_l {
+  margin: 1.5rem 1.5rem 1.5rem 2.5rem;
+  display: inline-block;
+}
+
+.footer {
+  /* border-top: solid 1px rgb(212, 212, 212); */
+  background-color: #eee;
+  color: gray;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .responsive_flex_r2c {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsive_flex_c2r {
+    display: flex;
+  }
+
+  .absolute_nav_r1_res {
+    display: none;
+  }
+
+  .absolute_nav_r2_res {
+    display: inline-block;
+    padding: 1.5rem;
+    right: 0;
+    position: absolute;
+  }
+
+  .absolute_nav_l_res {
+    display: inline-block;
+    padding: 1.5rem;
+    left: 0;
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #logo_res {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  .center_div_res {
+    padding: 3.5rem 0 1.5rem 0;
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    border-radius: 3rem;
+  }
+
+  .center_div_res_container {
+    height: 80%;
+    width: 70%;
+  }
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
